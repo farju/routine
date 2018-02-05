@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8f6d45"
+    android:orientation="vertical"
+    android:padding="10sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+
+        <TextView
+            android:id="@+id/subject_title_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="#000"
+            android:layout_weight="2"
+            android:hint="Java"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/subject_time_id"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            android:layout_height="0dp"
+            android:textColor="#06c3e9"
+            android:layout_weight="1"
+            android:hint="10:40 AM To 11:40 AM"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

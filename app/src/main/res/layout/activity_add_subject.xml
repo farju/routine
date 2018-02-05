@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#708387"
+    tools:context="com.example.firoz.classroutine.AddSubject">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+
+            <Spinner
+                android:id="@+id/my_spinner_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp">
+
+            </Spinner>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="20sp"
+                android:layout_marginTop="20sp"
+                android:background="#624b81"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="Time"
+                    android:textAlignment="center"
+                    android:textSize="30sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="7"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/from_time"
+                        android:onClick="setTheTime"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:background="#2a4d5c"
+                        android:padding="10sp"
+                        android:hint="10:30 AM"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:text="   To"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/to_time"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:onClick="setTheTime"
+                        android:hint="12:30 PM"
+                        android:background="#2a4d5c"
+                        android:padding="10sp"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/course_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:hint="Course Title"
+                android:textColor="#000"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+
+            <EditText
+                android:id="@+id/course_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:textColor="#000"
+
+                android:hint="Course Code"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+
+            <EditText
+                android:id="@+id/room_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:hint="Room: 320"
+                android:textColor="#000"
+
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+
+            <EditText
+                android:id="@+id/teacher_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:textColor="#000"
+
+                android:hint="Course Teacher"
+                android:textAlignment="center"
+                android:textSize="25dp" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textSize="30sp"
+                android:layout_margin="20sp"
+                android:background="#358c99"
+                android:onClick="saveToDatabase"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

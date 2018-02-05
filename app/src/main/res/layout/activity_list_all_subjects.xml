@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    tools:context="com.example.firoz.classroutine.ListAllSubjects">
+
+
+
+    <Spinner
+        android:id="@+id/my_spinner_id_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp">
+
+    </Spinner>
+
+    <ListView
+        android:divider="#ec09e1"
+        android:listSelector="#16710d"
+        android:dividerHeight="2sp"
+        android:id="@+id/my_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </ListView>
+
+
+</LinearLayout>
